@@ -1,0 +1,435 @@
+.App {
+  height: 100%;
+}
+
+body {
+  background-color: #f8faf9;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.application-loading {
+  z-index: 2050;
+  background: #ffffff75 url(/assets/spinner.svg) no-repeat center center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-size: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pb-300 {
+  padding-bottom: 300px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.large-icon {
+  margin-right: 4px;
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.ml-28 {
+  margin-left: 28px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.font-size-24 {
+  font-size: 24px
+}
+
+.select-team-icon {
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.select-team-icon:hover {
+  color: blue;
+  margin-top: 10px;
+}
+
+.password-strength-meter {
+  text-align: left;
+}
+
+.password-strength-meter-progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 8px;
+}
+
+.password-strength-meter-progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.password-strength-meter-label {
+  font-size: 14px;
+}
+
+.password-strength-meter-progress::-webkit-progress-value {
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.strength-Weak::-webkit-progress-value {
+  background-color: #F25F5C;
+}
+.strength-Fair::-webkit-progress-value {
+  background-color: #FFE066;
+}
+.strength-Good::-webkit-progress-value {
+  background-color: #247BA0;
+}
+.strength-Strong::-webkit-progress-value {
+  background-color: #70C1B3;
+}
+
+.team-preview {
+  padding: 15px 0 0 15px;
+}
+
+.team-preview:hover {
+  background-color: #f8f8f8;
+  box-shadow: 3px 3px 5px #eee;
+  border-radius: 10px;
+  padding: 15px 0 0 15px;
+}
+
+.team-active {
+  background-color: lightgray;
+  box-shadow: 3px 3px 5px #eee;
+  border-radius: 10px;
+  padding: 15px 0 0 15px;
+}
+
+.user-preview {
+  text-align: left;
+  padding: 18px 0 10px 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.user-preview-header {
+  border-bottom: 1px solid lightgray;
+  text-align: left;
+  margin-top: 36px;
+  padding: 0 0 12px 15px;
+}
+
+.user-preview:hover {
+  box-shadow: 3px 3px 5px #eee;
+  padding: 18px 0 10px 15px;
+}
+
+.user-actions {
+  margin-top: -10px;
+  margin-left: 24px;
+}
+
+.user-actions-dropdown {
+  width: 160px;
+}
+
+.content-center {
+  justify-content: center !important;
+}
+
+.assign-user-to-team {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.removed-user {
+  background-color: #F25F5C;
+}
+
+.added-user {
+  background-color: lightgreen;
+  border-radius: 20px;
+  padding: 4px 15px;
+}
+
+.team-user-preview {
+  padding-top: 15px;
+  color: #555555;
+}
+
+.team-users-preview {
+  border-left: 1px solid lightgray;
+  margin-top: -40px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.cursor-pointer {
+  cursor: pointer
+}
+
+.main-action {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 40px 0;
+}
+
+.main-action:hover {
+  background-color: #f8f8f8;
+}
+
+.nav-link-active, .nav-link-active:hover {
+  cursor: auto;
+  color: #333;
+}
+
+.header-preview {
+  text-align: center;
+}
+
+.agents-selector {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 16px 16px 16px 20px;
+  margin-top: 72px;
+}
+
+.agents-selector:hover {
+  cursor: pointer;
+}
+
+.agents-selector-active {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 16px 16px 16px 20px;
+  color: white;
+  background-color: #007bff;
+  margin-top: 72px;
+}
+
+.teams-selector {
+  padding: 16px 0 16px 20px;
+}
+
+.teams-selector:hover {
+  cursor: pointer;
+}
+
+.teams-selector-active {
+  color: blue;
+  padding: 16px 0 16px 20px;
+}
+
+.teams-selector-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.selector {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.global-page {
+  padding-top: 20px;
+}
+
+.user-table {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.edit-team {
+  margin-top: -18px;
+  margin-left: 24px;
+  width: 160px;
+}
+
+.team-selector-item {
+  border-top: 1px solid lightgray;
+  padding: 16px 0 16px 36px;
+}
+
+.team-selector-item-active {
+  color: white;
+  background-color: #007bff;
+  border-top: 1px solid lightgray;
+  padding: 16px 0 16px 36px;
+}
+
+.team-selector-item:hover {
+  cursor: pointer;
+}
+
+.page {
+  padding: 20px 15px 15px 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0 0 10px 10px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px 15px 15px 20px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 10px 10px 0 0;
+}
+
+.button-remove-user {
+  float: right;
+  margin-top: -8px;
+  margin-right: 10px;
+  width: 160px;
+}
+
+.button-add-user {
+  float: right;
+  margin-top: -8px;
+  width: 160px;
+}
+
+.team-header {
+  border-bottom: 1px solid lightgray;
+  padding: 22px 0 12px 15px;
+}
+
+.team-users-header {
+  border-bottom: 1px solid lightgray;
+  padding: 16px 0 16px 15px;
+}
+
+.team-user {
+  border-bottom: 1px solid lightgray;
+  padding: 16px 0 16px 15px;
+}
+
+.team-users-in {
+  margin-right: -10px;
+  text-align: left;
+}
+
+.team-users-in-border {
+  margin-right: -10px;
+  border-right: 1px solid black;
+  text-align: left;
+}
+
+.team-users-not-in {
+  margin-left: -20px;
+  text-align: left;
+}
+
+.team-users-not-in-border {
+  margin-left: -20px;
+  border-left: 1px solid black;
+  text-align: left;
+}
+
+.empty-user-preview {
+  padding-top: 80px;
+}
+
+.data-table {
+  margin-bottom: 50px;
+  margin-left: 90px;
+}
+
+.empty-team-user-preview-left {
+  margin-left: -20px;
+  padding-top: 80px;
+  border-left: 1px solid black;
+}
+
+.empty-team-user-preview-right {
+  margin-right: -10px;
+  padding-top: 80px;
+  border-right: 1px solid black;
+}
+
+.team-users-header-border {
+  border-right: 1px solid black;
+}
+
+.team-users-header-not-in-team {
+
+}
+
+.assigned-teams {
+  border-right: 1px solid black;
+  padding-left: 60px;
+}
+
+.available-teams {
+  padding-left: 60px;
+}
+
+.save {
+  width: 160px;
+  float: left;
+}
+
+.cancel {
+  width: 160px;
+  float: right;
+}
+
+.save-team {
+  width: 160px;
+  float: left;
+  margin-left: 50px;
+}
+
+.undo-edits {
+  width: 160px;
+  float: left;
+  margin-left: 40px;
+}
+
+.invite-agent {
+  width: 160px;
+  margin-top: 20px;
+}
+
+.assigned-teams-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.user-team {
+  margin-top: 12px;
+  cursor: pointer;
+}
