@@ -23,7 +23,7 @@ export default class Databases extends Component {
     }
 
     getDatabases() {
-        axios.get("http://localhost:8080/api/databases", {
+        axios.get("https://subd-back.herokuapp.com/api/databases", {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -42,7 +42,7 @@ export default class Databases extends Component {
     };
 
     deleteDatabase(id) {
-        axios.delete("http://localhost:8080/api/databases/" + id, {
+        axios.delete("https://subd-back.herokuapp.com/api/databases/" + id, {
             headers: {
                 'Content-Type': 'application/json'
             }

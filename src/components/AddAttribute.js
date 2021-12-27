@@ -20,7 +20,7 @@ export default class AddTable extends Component {
     }
 
     getTable() {
-        axios.get("http://localhost:8080/api/tables/" + this.state.tableId, {
+        axios.get("https://subd-back.herokuapp.com/api/tables/" + this.state.tableId, {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -80,7 +80,7 @@ export default class AddTable extends Component {
         }
         let _this = this;
         this.setState({isLoading: true});
-        axios.post(`http://localhost:8080/api/attribute?name=${firstName}&type=${type}&maxLength=${maxLength}&headerId=${_this.state.table.header.id}`, {
+        axios.post(`https://subd-back.herokuapp.com/api/attribute?name=${firstName}&type=${type}&maxLength=${maxLength}&headerId=${_this.state.table.header.id}`, {
             headers: {
                 'Content-Type': 'application/json'
             }

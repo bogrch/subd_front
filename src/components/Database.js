@@ -25,7 +25,7 @@ export default class Database extends Component {
 
     getDatabase() {
         this.setState({isLoading: true});
-        axios.get("http://localhost:8080/api/databases/" + this.state.id, {
+        axios.get("https://subd-back.herokuapp.com/api/databases/" + this.state.id, {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -44,7 +44,7 @@ export default class Database extends Component {
     };
 
     deleteTable(id) {
-        axios.delete("http://localhost:8080/api/table?tableId=" + id, {
+        axios.delete("https://subd-back.herokuapp.com/api/table?tableId=" + id, {
             headers: {
                 'Content-Type': 'application/json'
             }

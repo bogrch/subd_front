@@ -20,7 +20,7 @@ export default class AddLine extends Component {
     }
 
     getTable() {
-        axios.get("http://localhost:8080/api/tables/" + this.state.tableId, {
+        axios.get("https://subd-back.herokuapp.com/api/tables/" + this.state.tableId, {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -124,7 +124,7 @@ export default class AddLine extends Component {
         });
         console.log(body);
         this.setState({isLoading: true});
-        axios.post(`http://localhost:8080/api/line?tableId=${_this.state.table.id}`, body, {
+        axios.post(`https://subd-back.herokuapp.com/api/line?tableId=${_this.state.table.id}`, body, {
             headers: {
                 'Content-Type': 'application/json'
             }

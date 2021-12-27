@@ -44,7 +44,7 @@ export default class AddDatabase extends Component {
     createDbRequest(firstName) {
         let _this = this;
         this.setState({isLoading: true});
-        axios.post("http://localhost:8080/api/database?name=" + firstName, {
+        axios.post("https://subd-back.herokuapp.com/api/database?name=" + firstName, {
             headers: {
                 'Content-Type': 'application/json'
             }
